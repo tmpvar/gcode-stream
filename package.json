@@ -21,5 +21,10 @@
     "test": "node_modules/mocha/bin/mocha test/test.js -R spec",
     "cover": "istanbul cover _mocha -- test/test.js -R spec",
     "minify": "browserify -e gcode-stream.js | uglifyjs > gcode-stream.min.js"
+  },
+  "dependencies": {
+    "split2": "~0.1.1",
+    "through2": "~0.4.1",
+    "stream-splice": "~1.0.8"
   }
 }
